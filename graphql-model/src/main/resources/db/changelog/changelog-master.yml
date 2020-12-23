@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/20201112-init .sql
+  - include:
+      file: db/changelog/20201116-add_job_table.sql
+  - include:
+      file: db/changelog/20201119-change_attachment_namesize.sql
+  - include:
+      file: db/changelog/20201125-truncate_test_data.sql
+  - include:
+      file: db/changelog/20201130-add-lost-draft-statuses.sql
+  - include:
+      file: db/changelog/20201215-update_options.sql

@@ -1,0 +1,7 @@
+TRUNCATE TABLE attachment CASCADE ;
+TRUNCATE TABLE building CASCADE ;
+TRUNCATE TABLE petition CASCADE ;
+TRUNCATE TABLE petition_building CASCADE ;
+TRUNCATE TABLE petition_document CASCADE ;
+TRUNCATE TABLE status_history CASCADE ;
+TRUNCATE TABLE sync_table CASCADE ;
