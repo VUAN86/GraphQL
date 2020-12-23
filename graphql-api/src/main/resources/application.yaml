@@ -1,0 +1,70 @@
+#graphql:
+#  servlet:
+#    mapping: /graphql
+#    enabled: true
+#    corsEnabled: true
+#    cors:
+#      allowed-origins: http://some.domain.com
+#    # if you want to @ExceptionHandler annotation for custom GraphQLErrors
+#    exception-handlers-enabled: true
+#    contextSetting: PER_REQUEST_WITH_INSTRUMENTATION
+#
+##appsettings:
+###  log:
+###    logfile: log4j2-stand.yml
+###    sql-level: DEBUG
+###    sql-descriptor-level: DEBUG
+###  admin:
+###    user: ${ADMIN_USER}
+###    pwd: ${ADMIN_PASSWORD}
+#spring:
+##  cloud:
+##    config:
+##      enabled: false
+##  application:
+##    name: lksapi
+##  main:
+##    allow-bean-definition-overriding: true
+##  servlet:
+##    multipart:
+##      enabled: true
+##      max-file-size: 50MB
+##      max-request-size: 51MB
+###  datasource:
+###    driver-class-name: org.postgresql.Driver
+###    url: ${DB_URL}
+###    username: ${DB_USER}
+###    password: ${DB_PASSWORD}
+##
+###    hikari:
+###      #описание свойств: https://github.com/brettwooldridge/HikariCP#configuration-knobs-baby
+###      poolName: HikariPool-app
+###      minimum-idle: 6
+###      maximum-pool-size: 100
+###      connection-timeout: 50000
+###      idle-timeout: 60000
+##
+###  liquibase:
+###    enabled: true
+###    change-log: classpath:db/changelog/changelog-master.yml
+##
+#server:
+#  port: 8080
+##  max-http-header-size: 48000
+#  tomcat:
+#    max-threads: 50
+##
+##
+##management:
+##  server:
+##    ssl:
+##      enabled: false
+##  endpoints:
+##    web:
+##      exposure:
+##        include: [ "beans", "env", "health", "info", "heapdump", "loggers", "metrics", "sessions", "threaddump" ]
+##
+##logging:
+##  level:
+##    graph: INFO
+###  config: classpath:log/${appsettings.log.logfile}
